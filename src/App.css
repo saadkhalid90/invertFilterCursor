@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  background-color: #FEF283;
+  cursor:none!important;
+}
+
+div.cursorDiv {
+  backdrop-filter: invert(1);
 }
 
 .App-logo {

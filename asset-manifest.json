@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/invertFilterCursor/static/css/main.fc598327.chunk.css",
+    "main.js": "/invertFilterCursor/static/js/main.5c5e87a1.chunk.js",
+    "main.js.map": "/invertFilterCursor/static/js/main.5c5e87a1.chunk.js.map",
+    "runtime-main.js": "/invertFilterCursor/static/js/runtime-main.2ce78f30.js",
+    "runtime-main.js.map": "/invertFilterCursor/static/js/runtime-main.2ce78f30.js.map",
+    "static/js/2.4cad9883.chunk.js": "/invertFilterCursor/static/js/2.4cad9883.chunk.js",
+    "static/js/2.4cad9883.chunk.js.map": "/invertFilterCursor/static/js/2.4cad9883.chunk.js.map",
+    "static/js/3.4545b0d9.chunk.js": "/invertFilterCursor/static/js/3.4545b0d9.chunk.js",
+    "static/js/3.4545b0d9.chunk.js.map": "/invertFilterCursor/static/js/3.4545b0d9.chunk.js.map",
+    "index.html": "/invertFilterCursor/index.html",
+    "static/css/main.fc598327.chunk.css.map": "/invertFilterCursor/static/css/main.fc598327.chunk.css.map",
+    "static/js/2.4cad9883.chunk.js.LICENSE.txt": "/invertFilterCursor/static/js/2.4cad9883.chunk.js.LICENSE.txt",
+    "static/media/AlgoInverted.9953f5d1.png": "/invertFilterCursor/static/media/AlgoInverted.9953f5d1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2ce78f30.js",
+    "static/js/2.4cad9883.chunk.js",
+    "static/css/main.fc598327.chunk.css",
+    "static/js/main.5c5e87a1.chunk.js"
+  ]
+}

@@ -17,13 +17,13 @@ function App() {
   const handleMouseOver = useCallback((event) => {
     setHover('Hovered');
     setCursorWidth(50);
-    console.log('Hovered');
+    //console.log('Hovered');
   }, [setHover])
 
   const handleMouseOut = useCallback((event) => {
     setHover(null);
     setCursorWidth(40);
-    console.log('Out')
+    //console.log('Out')
   }, [setHover])
 
   return (
@@ -45,8 +45,6 @@ function App() {
       </div>
       <div
         className="SVGContain"
-        onMouseEnter={handleMouseOver}
-        onMouseLeave={handleMouseOut}
         style={{
           display: 'flex',
           flexDirection: 'column',
@@ -55,9 +53,17 @@ function App() {
           height: '100vh'
         }}
       >
-        <div className="SVGScaleContain" style={{width: '35%'}}>
+        <div
+          className="SVGScaleContain"
+          style={{width: '35%'}}
+          onMouseEnter={handleMouseOver}
+          onMouseLeave={handleMouseOut}
+        >
           <NanoSvg/>
-          <p>JMEELA - Jmeela</p>
+          <p>
+            <span className="artistName">JMEELA - </span>
+            <span className="songName">Jmeela</span>
+          </p>
           <img style={{width: '70px'}} src={algoInverted}/>
         </div>
       </div>

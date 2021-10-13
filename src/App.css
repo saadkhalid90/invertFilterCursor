@@ -1,11 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 .App {
   text-align: center;
   background-color: #FEF283;
-  cursor:none!important;
+  /* cursor:none!important; */
 }
 
 div.cursorDiv {
   backdrop-filter: invert(1);
+  transition: width 0.25s, height 0.25s;
+  pointer-events: none;
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: #616161; */
+}
+
+span.artistName {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+span.songName {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .App-logo {

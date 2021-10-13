@@ -6,7 +6,6 @@ import algoInverted from './AlgoInverted.png';
 
 function App() {
   const [mousePos, setMousePos] = useState({x: 0, y: 0});
-  const [hover, setHover] = useState(null)
   const [cursorWidth, setCursorWidth] = useState(0);
 
   const handleMouseMove = useCallback((event) => {
@@ -15,16 +14,14 @@ function App() {
   }, [setMousePos]);
 
   const handleMouseOver = useCallback((event) => {
-    setHover('Hovered');
     setCursorWidth(50);
     //console.log('Hovered');
-  }, [setHover])
+  }, [setCursorWidth])
 
   const handleMouseOut = useCallback((event) => {
-    setHover(null);
     setCursorWidth(40);
     //console.log('Out')
-  }, [setHover])
+  }, [setCursorWidth])
 
   return (
     <div
@@ -32,7 +29,7 @@ function App() {
       onMouseMove={handleMouseMove}
     >
       <div
-        className={`cursorDiv ${hover}`}
+        className={`cursorDiv`}
         style={{
           position: 'absolute',
           width: `${cursorWidth}px`,
@@ -55,9 +52,9 @@ function App() {
       >
         <div
           className="SVGScaleContain"
-          style={{width: '35%'}}
           onMouseEnter={handleMouseOver}
           onMouseLeave={handleMouseOut}
+          style={{width: '35%'}}
         >
           <NanoSvg/>
           <p>
